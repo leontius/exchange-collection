@@ -63,6 +63,6 @@ jobs:
           if git diff --cached --quiet; then
             echo "No changes to commit."
           fi
-          git commit -m "Automated update of generated crate"
+          git commit -m "Automated update of generated crate."
           git pull --rebase origin main || echo "No changes to pull"
           git push origin main
