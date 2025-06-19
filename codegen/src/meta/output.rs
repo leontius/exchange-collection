@@ -96,6 +96,10 @@ impl CollectionWorkspace {
                 "serde_yaml".to_string(),
                 Dependency::Simple("0.9.33".to_string()),
             );
+            dependencies.insert(
+                "serde_repr".to_string(),
+                Dependency::Simple("0.1".to_string()),
+            );
             dependencies.insert("url".to_string(), Dependency::Simple("2.5.4".to_string()));
             dependencies.insert(
                 "reqwest".to_string(),
