@@ -3,7 +3,7 @@ name: generate rust code from assets
 on:
   push:
     branches:
-      - release
+      - main
 
 permissions:
   actions: write
@@ -45,7 +45,7 @@ jobs:
       - name: checkout target repository
         uses: actions/checkout@v4
         with:
-          repository: kanekoshoyu/exchange-collection-rust
+          repository: leontius/exchange-collection-rust
           token: ${{ secrets.PAT }}
           path: exchange-collection-rust
 
